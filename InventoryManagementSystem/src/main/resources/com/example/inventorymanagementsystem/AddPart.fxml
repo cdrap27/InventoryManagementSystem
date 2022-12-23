@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="738.0" prefWidth="599.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.inventorymanagementsystem.AddPart">
+    <children>
+        <Text layoutX="39.0" layoutY="89.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add Part" wrappingWidth="82.224609375">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font>
+        </Text>
+        <RadioButton fx:id="inHouseRadio" layoutX="300.0" layoutY="74.0" mnemonicParsing="false" onAction="#inHouse" selected="true" text="In-House">
+         <toggleGroup>
+            <ToggleGroup fx:id="tGroup" />
+         </toggleGroup></RadioButton>
+        <RadioButton layoutX="414.0" layoutY="74.0" mnemonicParsing="false" onAction="#outsourced" prefHeight="17.0" prefWidth="99.0" text="Outsourced" toggleGroup="$tGroup" />
+      <Button layoutX="388.0" layoutY="499.0" mnemonicParsing="false" onAction="#addPart" text="Save" />
+      <Button fx:id="addCancel" layoutX="464.0" layoutY="499.0" mnemonicParsing="false" onAction="#onAddCancel" text="Cancel" />
+      <Text fx:id="machineID" layoutX="91.0" layoutY="440.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Machine ID" />
+      <Text fx:id="machineID1" layoutX="87.0" layoutY="254.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" />
+      <Text fx:id="machineID2" layoutX="91.0" layoutY="254.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+      <Text fx:id="machineID3" layoutX="91.0" layoutY="206.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID" />
+      <Text fx:id="machineID4" layoutX="91.0" layoutY="393.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Max" />
+      <Text fx:id="machineID5" layoutX="91.0" layoutY="344.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Price/Cost" />
+      <Text fx:id="machineID11" layoutX="91.0" layoutY="297.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Inv" />
+      <TextField fx:id="partID" blendMode="DARKEN" editable="false" layoutX="196.0" layoutY="189.0" />
+      <TextField fx:id="name" layoutX="196.0" layoutY="237.0" />
+      <TextField fx:id="inv" layoutX="196.0" layoutY="280.0" />
+      <TextField fx:id="price" layoutX="196.0" layoutY="327.0" />
+      <TextField fx:id="max" layoutX="196.0" layoutY="376.0" />
+      <TextField fx:id="mid" layoutX="196.0" layoutY="423.0" />
+      <Text fx:id="machineID41" layoutX="370.0" layoutY="393.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Min" />
+      <TextField fx:id="min" layoutX="414.0" layoutY="376.0" />
+    </children>
+</AnchorPane>
